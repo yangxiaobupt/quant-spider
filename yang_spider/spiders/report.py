@@ -7,8 +7,6 @@ import scrapy
 import scrapy.cmdline
 from scrapy import Selector
 import logging
-from scrapy.spiders import CrawlSpider, Rule
-from scrapy.linkextractors import LinkExtractor
 
 from yang_spider.items import YangSpiderItem
 
@@ -25,11 +23,6 @@ class ReportSpider(scrapy.Spider):
     start_urls = [
         "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1"
     ]
-
-    # rules = (
-    # Rule(SgmlLinkExtractor(restrict_xpaths=('//div[@class="tout"]/h3/a',)), callback='parse'),
-    #     Rule(SgmlLinkExtractor(restrict_xpaths=('//a[@title="Next"]',)), follow= True),
-    #     )
 
     def parse(self, response):
         self.log('Parse category link: %s' % response.url, logging.DEBUG)
