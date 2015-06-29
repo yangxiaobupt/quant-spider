@@ -1,0 +1,1314 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<title>研究报告标题：广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626-慧博投研资讯|慧博资讯|迈博汇金|迈博资讯|股票资讯|股票研究报告|股票书籍|股票视频|股票软件|股票数据|投资研究报告|行业研究报告|公司研究报告|比特币研究|投资分析报告|机构研究报告|投资书籍|证券书籍|投资视频|投资|股票|证券|基金|期货|权证|资讯|信息|消息|内幕|研究报告||行业分析|券商研究报告|证券研究报告</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="研究报告,广发证券研究报告,调研报告,广发证券,分析报告,下载,杨燕,慧博投研资讯,慧博投研资讯(原迈博汇金),慧博资讯,迈博资讯,专业股票资讯网站,提供海量股票研究报告,股票资讯,股票内幕,股票书籍下载,股票视频,股票数据,以及即时股票投资信息服务,投资研究报告,投资分析报告,机构研究报告,股票书籍,投资书籍,券商研究报告,证券研究报告,股票视频教程,股票视频讲座,投资视频,股票讲座,投资讲座,视频教程,投资,股票,证券,基金,期货,权证,书籍,图书,资讯,信息,消息,内幕">
+<meta name="description" content="研究报告和调研报告,广发证券研究报告,慧博投研资讯(原迈博汇金),慧博资讯,股票,股票研究报告,股票调研报告,股票书籍,股票资讯,股票数据,券商研究报告,证券研究报告,股票视频,股票讲座,股票论坛,topview,赢富,指南针,投资研究报告,投资分析报告,机构研究报告,比特币交易,投资书籍,股票视频教程,股票视频讲座,投资视频,投资讲座,视频教程,投资,证券,基金,期货,权证,书籍,图书,资讯,信息,消息,内幕,研究报告标题为：广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626,慧博投研资讯提供全面及时的研究报告和调研报告">
+
+<link rel="stylesheet" type="text/css" href="css/index_1.css"/>
+<link rel="stylesheet" type="text/css" href="css/read03.css"/>
+
+<SCRIPT type=text/javascript src="JS/JavaScript.js"></SCRIPT>
+<SCRIPT type=text/javascript src="JS/shoucang.js"></SCRIPT>
+<SCRIPT type=text/javascript src="JS/login.js"></SCRIPT>
+<SCRIPT type=text/javascript src="JS/sysdownload.js"></SCRIPT>
+<script src="JS/jquery-1.5.2.min.js" type="text/javascript"></script>
+<LINK rel=stylesheet type=text/css href="css/logindiv.css">
+<LINK rel=stylesheet type=text/css href="css/comment0918.css">
+
+
+
+
+
+
+<script type='text/javascript' src="JS/jquery.min.js-1.3.js"></script>
+<script type="text/javascript"> 
+
+function updatehit()
+{
+$.ajax(
+{ 
+
+  type:"get",
+  url: "updatehits.asp?id=1615977&types=doc&rd="+Math.random(5),
+  success:function(data) { }
+ 
+});
+}
+updatehit();
+
+
+function Talkscore(fen)
+{
+	fadeIn();
+}
+
+function fadeIn(){	
+	$("#popup").fadeIn(1000);
+	$("#popup").css("position","relative");
+	$("#popup").css("left","0px");
+	$("#popup").css("top","0px");
+	$("#talkline").fadeIn(1000);
+	$("#talkline").css("height","150px");
+	
+}	
+
+function fadeOut(){
+	$("#popup").fadeOut(0);
+	$("#talkline").css("height","50px");
+}
+
+function zishu(){
+	var value = document.getElementById('txtcontent').value;
+	var dis = 0;
+	if (dis>0)
+	{
+		document.getElementById('tijiao').disabled = "disabled";
+	}
+	else
+	{
+		if (value.length<151){
+			document.getElementById('zs').innerHTML = "您已经输入"+value.length+"字,"+"还能输入"+(150-value.length)+"字"; 
+			document.getElementById('tijiao').disabled = "";
+		}
+		else
+		{
+			document.getElementById('zs').innerHTML = "您已经输入"+value.length+"字,"+"超出"+(value.length-150)+"字"; 
+			document.getElementById('tijiao').disabled = "disabled";
+		}
+	}
+}
+function Talk()
+{
+	var test = document.getElementById('txtcontent').value ;
+	var frmdocurl = document.getElementById('hddocurl').value ;
+	var frmregdate = document.getElementById('hdregdate').value ;
+	var frmuname = document.getElementById('hduname').value ;
+	var f_talker = "";
+	var f_pageurl = "1615977";
+	var f_DocTitle = "广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626";
+	var rangkan = "0";
+	var Jviewtype="46";
+	var iStar=0;
+	if(rangkan==0)
+	{
+		if((document.getElementById("rdefen5").checked || document.getElementById("rdefen1").checked || document.getElementById("rdefen2").checked || document.getElementById("rdefen3").checked || document.getElementById("rdefen4").checked)==false)
+		{
+			document.getElementById('zs').innerHTML = "<span style='color:red;font-weight:bold;'>请先给此报告打分!</span>";
+			
+			return false;
+		}
+		
+		if (document.getElementById("rdefen1").checked)
+		{
+			var rdefen = document.getElementById("rdefen1").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen2").checked)
+		{
+			var rdefen = document.getElementById("rdefen2").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen3").checked)
+		{
+			var rdefen = document.getElementById("rdefen3").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen4").checked)
+		{
+			var rdefen = document.getElementById("rdefen4").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen5").checked)
+		{
+			var rdefen = document.getElementById("rdefen5").value;
+			iStar = rdefen;
+		}
+	}
+	if(rangkan>0)
+	{
+		if(/\S/.test(test)) 
+		{  
+			
+		}   
+		else 
+		{
+			document.getElementById('zs').innerHTML = "<span style='color:red;font-weight:bold;'>内容不能为空!</span>";
+			
+			  return false;  
+		}
+		if (test=="")
+		{
+			document.getElementById('zs').innerHTML = "<span style='color:red;font-weight:bold;'>内容不能为空!</span>";
+			return false;
+		}
+		test  = test.replace(/(^\s*)|(\s*$)/g, "");
+		 var ResultStr = "";
+		  Temp=test.split(" "); //双引号之间是个空格；
+		  for(i = 0; i < Temp.length; i++)
+		  {
+			  ResultStr +=Temp[i];
+		  }
+		test = ResultStr;
+		
+		if(test.length<1)
+		{
+			document.getElementById('zs').innerHTML = "<span style='color:red'>内容不能为空!</span>";
+	//		document.getElementById('zs').innerHTML = "<span style='color:red;font-weight:bold;'>内容不能小于10个字!</span>";
+			
+			return false;
+		}
+		var feifazifu1 = document.getElementById('txtcontent').value.indexOf("'");
+		if(feifazifu1>-1)
+		{
+			document.getElementById('zs').innerHTML = "<span style='color:red;font-weight:bold;'>非法字符 ' </span>";
+			return false;
+		}
+	}
+	
+	document.getElementById('tijiao').disabled = "disabled";
+	
+	
+	
+	strUrl = "ajax_talk.asp"
+	$.ajax({
+		type: "post",
+		url: strUrl,
+		data:"type=add&ctype=baogao&sviewtype=" + Jviewtype + "&test="+escape(test)+"&score="+iStar+"&docurl="+frmdocurl+"&udate="+frmregdate+ "&uname="+escape(frmuname)+"&dtitle="+escape(f_DocTitle)+"&timeStamp="+new Date().getTime(),
+		beforeSend: function(XMLHttpRequest){
+			//alert("type=add&ctype=baogao&sviewtype=" + Jviewtype + "&test="+escape(test)+"&score="+iStar+"&docurl="+frmdocurl+"&udate="+frmregdate+ "&uname="+escape(frmuname)+"&dtitle="+escape(f_DocTitle)+"&timeStamp="+new Date().getTime());
+		},
+		success: function(data){
+			
+			location.reload() ;
+		},
+		complete: function(XMLHttpRequest){
+			//alert(textStatus);
+		},
+		error: function(){
+			alert("评论有误");
+			//window.open(strUrl);
+		}
+	});
+}
+
+
+
+
+function zishuCmt(){
+	var value = document.getElementById('txtcontentCmt').value;
+	var dis = 0;
+	if (dis>0)
+	{
+		document.getElementById('tijiaoCmt').disabled = "disabled";
+	}
+	else
+	{
+		if (value.length<151){
+			document.getElementById('zsCmt').innerHTML = "您已经输入"+value.length+"字,"+"还能输入"+(150-value.length)+"字"; 
+			document.getElementById('tijiaoCmt').disabled = "";
+		}
+		else
+		{
+			document.getElementById('zsCmt').innerHTML = "您已经输入"+value.length+"字,"+"超出"+(value.length-150)+"字"; 
+			document.getElementById('tijiaoCmt').disabled = "disabled";
+		}
+	}
+}
+function TalkCmt()
+{
+	var test = document.getElementById('txtcontentCmt').value ;
+	var frmdocurl = document.getElementById('hddocurl').value ;
+	var frmregdate = document.getElementById('hdregdate').value ;
+	var frmuname = document.getElementById('hduname').value ;
+	var f_talker = "";
+	var f_pageurl = "1615977";
+	var f_DocTitle = "广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626";
+	var rangkan = "0";
+	var Jviewtype="46";
+	//alert(rangkan);
+	var iStar=0;
+	if(rangkan==0)
+	{
+		if((document.getElementById("rdefen5Cmt").checked || document.getElementById("rdefen1Cmt").checked || document.getElementById("rdefen2Cmt").checked || document.getElementById("rdefen3Cmt").checked || document.getElementById("rdefen4Cmt").checked)==false)
+		{
+			document.getElementById('zsCmt').innerHTML = "<span style='color:red'>请先给此报告打分!</span>";
+			
+			return false;
+		}
+	
+		if (document.getElementById("rdefen1Cmt").checked)
+		{
+			var rdefen = document.getElementById("rdefen1Cmt").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen2Cmt").checked)
+		{
+			var rdefen = document.getElementById("rdefen2Cmt").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen3Cmt").checked)
+		{
+			var rdefen = document.getElementById("rdefen3Cmt").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen4Cmt").checked)
+		{
+			var rdefen = document.getElementById("rdefen4Cmt").value;
+			iStar = rdefen;
+		}
+		if (document.getElementById("rdefen5Cmt").checked)
+		{
+			var rdefen = document.getElementById("rdefen5Cmt").value;
+			iStar = rdefen;
+		}
+	}
+	
+	if(rangkan>0)
+	{
+		if(/\S/.test(test)) 
+		{  
+			
+		}   
+		else 
+		{
+			document.getElementById('zsCmt').innerHTML = "<span style='color:red'>内容不能为空!</span>";
+			  
+			  return false;  
+		}
+		if (test=="")
+		{
+			document.getElementById('zsCmt').innerHTML = "<span style='color:red'>内容不能为空!</span>";
+			return false;
+		}
+		test  = test.replace(/(^\s*)|(\s*$)/g, "");
+		 var ResultStr = "";
+		  Temp=test.split(" "); //双引号之间是个空格；
+		  for(i = 0; i < Temp.length; i++)
+		  {
+			  ResultStr +=Temp[i];
+		  }
+		test = ResultStr;
+		
+		if(test.length<1)
+		{
+	//		document.getElementById('zsCmt').innerHTML = "<span style='color:red'>内容不能小于10个字!</span>";
+			document.getElementById('zsCmt').innerHTML = "<span style='color:red'>内容不能为空!</span>";
+			
+			return false;
+		}
+	}
+	
+	document.getElementById('tijiaoCmt').disabled = "disabled";
+	
+	strUrl = "ajax_talk.asp"
+	$.ajax({
+		type: "post",
+		url: strUrl,
+		data:"type=add&ctype=baogao&sviewtype=" + Jviewtype + "&test="+escape(test)+"&score="+iStar+"&docurl="+frmdocurl+"&udate="+frmregdate+ "&uname="+escape(frmuname)+"&dtitle="+escape(f_DocTitle)+"&timeStamp="+new Date().getTime(),
+		beforeSend: function(XMLHttpRequest){
+			//alert(data);
+		},
+		success: function(data){
+			location.reload() ;
+			//document.frmtalk.submit();
+		},
+		complete: function(XMLHttpRequest){
+			//alert(textStatus);
+		},
+		error: function(){
+			alert("评论有误");
+			//window.open(strUrl);
+		}
+	});
+}
+
+
+
+function closeweixin()
+{
+	document.getElementById('weixinama').style.display="none";
+}
+</script>
+
+
+</head>
+
+<body>
+
+<!-- 微信二维码 BEGIN -->
+<script type="text/javascript">
+function closeweixin()
+{
+	
+	document.getElementById('weixinama').style.display="none";
+}
+</script>
+<!-- 微信二维码 BEGIN -->
+<style type="text/css">
+.go-erwei{padding:0x 3px;width:170px;height:160px;border-bottom:130px;bottom:5px;right:0;position:fixed;_position:absolute;cursor:pointer;text-align:center}
+.go-erwei span{color:#333;font-size:12px;line-height:24px;display:block}
+.go-erwei:hover{text-decoration:none;background-color:#bbbfbf}
+.go-erwei:hover span{color:#fff}
+
+.go-erwei-pic{background-image:url(http://www.hibor.com.cn/images/huiboweixinbig.jpg);background-repeat:no-repeat;width:72px;height:72px;margin:0 auto}
+</style>
+<!--<div id="weixinama" class="go-erwei">
+        <span style="text-align: center;">扫一扫，每天精彩推送!<img onclick="closeweixin()" src="http://www.hibor.com.cn/images/xiaoclose.gif" /></span><a href="http://www.hibor.com.cn/soft/sjb/index.html" target="_blank"><img
+            src="http://www.hibor.com.cn/images/huiboweixinbig.jpg" width="120" height="120" border="0" /></a><span>慧博微信号：huibozx</span>
+    </div>
+--><!-- 微信二维码 END -->
+
+   <div id="weixinama" class="go-erwei">
+        <span style="text-align: center;">扫一扫，慧博手机终端下载！<img onclick="closeweixin()" src="images/xiaoclose.gif" /></span><a
+            href="soft/sjb/index.html" target="_blank"><img src="images/phone.jpg"
+                border="0" width="120" height="120" /></a><span></span>
+    </div>
+<!-- 微信二维码 END -->
+
+ <script type="text/javascript" src="JS/baidushare.js"></script>
+ 
+<!-- Baidu Button END -->
+
+<script type="text/javascript" src="js/lightBox.js"></script>
+
+<script type="text/javascript" src="js/lightBoxnone.js"></script>
+
+<script type="text/javascript">
+var html3 = '<iframe src="login.asp" width=400 height=485 frameborder="0" scrolling="no"></iframe>';
+var	footerhtml3='';
+
+var html6 = '<iframe src="register/reg_detail.asp" width=700 height=700 frameborder="0"></iframe>';
+var	footerhtml6='';
+
+var html7 = '<iframe src="tcw/index.asp" width=800 height=435 frameborder="0"></iframe>';
+var	footerhtml7='';
+var html8 = '<iframe src="tcw/index.asp" width=800 height=435 frameborder="0"></iframe>';
+var	footerhtml8='';
+var html9 = '<iframe src="tcw/index.asp" width=800 height=435 frameborder="0"></iframe>';
+var	footerhtml9='';
+var html10 = '<iframe src="checkauthor.asp?fromurl=http://www.hibor.com.cn/docdetail.asp?id=1615977" width=440 height=200 frameborder="0"></iframe>';
+var	footerhtml10='';
+
+var html11 = '<iframe src="tcw/hbindex.asp" width=700 height=400 frameborder="0"></iframe>';
+var	footerhtml11='';
+
+
+</script>
+
+
+
+<script>
+Boxnone("msg3",400,480,html3,footerhtml3)
+</script>
+
+
+<!--页面开始-->
+<div class="wap">
+	<!--头部开始-->
+<!--页面包含头部开始-->
+
+
+<script language="javascript">
+function Gaojisouso()
+{
+	location.target='_blank';
+	location.href='supersearch.html';
+}
+</script>
+<script type="text/javascript">
+    function search_over(inputObj) {
+        if (inputObj.value == "请输入关键字") {
+            inputObj.value = "";
+        }
+    }
+	
+	function GetDateStr(AddDayCount) {
+        var dd = new Date();
+        dd.setDate(dd.getDate() + AddDayCount); //获取AddDayCount天后的日期
+        var y = dd.getFullYear();
+        var m = dd.getMonth() + 1; //获取当前月份的日期
+        var d = dd.getDate();
+        return y + "-" + m + "-" + d;
+    }
+
+    function checkstr(str, digit) {
+
+        var search_lmuValue = document.all["search_lmu"].value;
+		 var d1 = "";
+        var d2 = "";
+        //alert(search_lmuValue);
+         //alert(search_lmuValue);
+        if (search_lmuValue == "en") {
+            var selecttime = document.all["search_time"].value;
+        
+            d2 = GetDateStr(0);
+
+            if (selecttime == 0) {
+                d1 = GetDateStr(0);
+				d2 = GetDateStr(0);
+            }
+            else if (selecttime == -1) {
+                d1 = GetDateStr(-1);
+				d2 = GetDateStr(-1);
+            }
+            else if (selecttime == -2) {
+                d1 = GetDateStr(-2);
+				d2 = GetDateStr(-2);
+            }
+            else if (selecttime == 1) {
+                d1 = GetDateStr(-30);
+            }
+            else if (selecttime == 3) {
+                d1 = GetDateStr(-90);
+            }
+            else if (selecttime == 6) {
+                d1 = GetDateStr(-180);
+            }
+            else if (selecttime == 12) {
+                d1 = GetDateStr(-365);
+            }
+			 else if (selecttime == 24) {
+                d1 = GetDateStr(-730);
+            }
+			if(str=="请输入关键字")
+			{
+				 str="";
+			}
+            document.form_top.action = "super_freports.asp?stime="+selecttime+"&freportkey2=" + str + "&freporttime1="+d1+"&freporttime2="+d2+"&ddoc=&ddoctype=";
+        }
+		else {
+            document.form_top.action = "result.asp";
+        }
+         //alert(search_lmuValue);
+       
+    
+        var n = 0;
+        for (i = 0; i < str.length; i++) {
+            var leg = str.charCodeAt(i); //ASCII码
+            if (leg > 255) {//大于255的都是中文          
+                n += 2;
+            } else {
+                n += 1;
+            }
+        }
+        if (n < digit) {
+            document.getElementById("form_top").submit();
+            //return true;
+            
+        } else {
+            alert("查询内容不允许超过100字符！请您重新查询！");
+           // return false;
+        }
+        
+      
+    }
+		</script>
+        
+	<!--登陆条-->
+ 
+ <div style="width:100%">
+  <div >
+  <iframe id="demo" name="ifeditor"  frameborder=0 marginwidth=0 marginheight=0 scrolling=no width="100%"  height="40" src="toplogin.asp" class="topphone"></iframe>
+  </div>
+  </div>
+ 
+	<!--登陆条结束-->
+    
+	<!--头部开始-->
+	<div class="head">
+       <div class="himg" ><a href="index.html" target="_blank"><img src="images/logo.jpg" width="216"  border="0" style="float:left;"/></a></div><div style="float:left; margin-top:15px; width:126px;">
+       <img src="images/logotip.jpg"  border="0" style="float:left; width:126px; height:46px;"/></div>
+       <div class="hipu"  style="width:640px;">
+        
+          <form action="result.asp" method="post" name="form_top" id="form_top" target="_blank" style="float:left">
+		  <script type="text/javascript">
+           function gradeChange()
+           {
+              var x=document.all['search_lmu'].value;
+              var obj=document.getElementById('search_area');
+             // alert(x);
+               if (x == 10 || x=="en")
+              {  
+               
+               obj.disabled=true;
+              }
+              else
+              {
+                  obj.disabled=false;
+              }
+             
+           }
+         </script>
+          <table>
+          <tr>
+            <td >     
+                    
+                      <select name="search_lmu" size="1" onchange="gradeChange()"  onfocus="gradeChange()" onblur="gradeChange()" >
+                        <option value="0">中文研报</option>
+                        <option value="13">&nbsp;&nbsp;|--宏观经济</option>
+                        <option value="4">&nbsp;&nbsp;|--投资策略</option>
+                        <option value="2" >&nbsp;&nbsp;|--行业分析</option>
+                        <option value="1" >&nbsp;&nbsp;|--公司调研</option>
+                        <option value="14">&nbsp;&nbsp;|--晨会早刊</option>
+                        <option value="5" >&nbsp;&nbsp;|--机构资讯</option>
+                        <option value="8" >&nbsp;&nbsp;|--期货研究</option>
+                        <option value="15">&nbsp;&nbsp;|--股指期货</option>
+                         <option value="23">&nbsp;&nbsp;|--期权研究</option>
+                        <option value="6" >&nbsp;&nbsp;|--基金频道</option>
+                        <option value="16" >&nbsp;&nbsp;|--债券研究</option>
+                        <option value="17" >&nbsp;&nbsp;|--外汇研究</option>
+                        <option value="9" >&nbsp;&nbsp;|--港台研究</option>
+                        <option value="18" >&nbsp;&nbsp;|--金融工程</option>
+                        <option value="19" >&nbsp;&nbsp;|--投资组合</option>
+                        <option value="20" >&nbsp;&nbsp;|--融资融券</option>
+                        <option value="21" >&nbsp;&nbsp;|--新股专题</option>
+                        <option value="22" >&nbsp;&nbsp;|--并购重组</option>
+                        <option value="en">外文研报</option>
+                        <option value="10">全部财经资讯</option>
+                      </select>
+        </td>
+            <td>
+                      <select name="search_area" id="search_area" >
+                        <option value="DocTitle">研究报告标题</option>
+                        <option value="Company_code">股票代码</option>
+                        <option value="Company">股票名称</option>
+                        <option value="DocPublish">研究报告出处</option>
+                        <option value="Comment">研究报告评级</option>
+                        <option value="DocAuthor">研究报告作者</option>
+                      </select>
+        </td>
+            <td>              
+                      <select name="search_time" >
+                        <option value="0">今天</option>
+                        <option value="-1">昨天</option>
+                        <option value="-2">前天</option>
+                        <option value="1">最近一个月内</option>
+                        <option value="3">最近三个月内</option>
+                        <option value="6">最近半年内</option>
+                        <option value="12">最近一年内</option>
+                         <option value="24">最近两年内</option>
+                         
+                         
+                         
+                      </select>
+        </td>
+            <td>              
+                      <input name="search_keywords" id="searchlens" type="text"  value="请输入关键字" class="inpp"  onclick="search_over(this)"  />
+        
+        </td><td>
+        <input type="button" onclick="checkstr(searchlens.value,100)" name="button" id="button" style=" cursor:pointer;border:0;background:url(images/ks.jpg) no-repeat;width:84px;float:left;height:25px;" class="but" />
+                 </td><td>       
+        
+          <a href="supersearch.html" target="_blank" style="border:0;background:url(images/ss.gif) no-repeat;width:84px;float:left;height:25px; margin-top:3px; display:block;"></a>  
+          
+        
+        </td></tr></table>
+         </form>
+
+
+       </div>
+    </div>
+    <!--头部结束-->
+
+    
+    <!--导航开始-->
+    <script>
+	
+	if(screen.width>="1024")
+	{
+    document.write('<div class="daohang">')
+	}
+	else
+	{
+		document.write('<div class="daohang800">')
+	}
+	</script>
+      <div class="dh">
+        <ul>
+          <li><a href="index.html"  target="_blank">首<span style="color:#6d6c6a">首页</span>页</a></li>
+          <li><a href="economy_3.html"  target="_blank">财经资讯 </a></li>
+          
+          <li><a href="soft/download.html"  target="_blank"><span ><strong>策略终端</strong></span></a></li>
+          
+        </ul>
+        
+        <ul>
+          <li><a href="microns_13.html"  target="_blank">宏观经济 </a></li>
+          <li><a href="microns_8.html"  target="_blank">期货研究</a></li>
+          <li><a href="microns_9.html"  target="_blank">港台研究</a></li>
+        </ul>
+        
+        
+        <ul>
+          <li><a href="microns_4.html"  target="_blank"> 投资策略 </a></li>
+          <li><a href="microns_15.html"  target="_blank">股指期货</a></li>
+          <li><a href="microns_18.html"  target="_blank">金融工程 </a></li>
+
+        </ul>
+
+        <ul>
+          <li><a href="microns_2.html"  target="_blank">行业分析 </a></li>
+          <li><a href="microns_23.html"  target="_blank">期权研究 </a></li>
+         <li><a href="microns_19.html"  target="_blank">投资组合 </a></li>
+        </ul>
+        
+        
+        <ul>
+          <li><a href="microns_1.html"  target="_blank">公司调研 </a></li>
+          <li><a href="microns_6.html"  target="_blank">基金频道</a></li>
+          <li><a href="microns_20.html"  target="_blank">融资融券 </a></li> 
+        </ul>
+        
+        <ul>
+          <li><a href="microns_14.html"  target="_blank">晨会早刊 </a></li>
+         <li><a href="microns_16.html"  target="_blank">债券研究</a></li> 
+         <li><a href="microns_21.html"  target="_blank">新股研究 </a></li> 
+        </ul>
+        <ul>
+          <li><a href="microns_5.html"  target="_blank">机构资讯 </a></li>
+          <li><a href="microns_17.html"  target="_blank">外汇研究</a></li>
+          <li><a href="microns_22.html"  target="_blank">并购重组 </a></li>
+        </ul>
+        <ul><li><a href="freport_11_1.html"  target="_blank">外文报告 </a></li>
+          <li><a href="anreport_12.html"  target="_blank">公司公告 </a></li>
+          <li><a href="report.html"  target="_blank">定期报告</a></li>
+          
+        </ul>
+        
+        <ul>
+         <li><a href="favorites.html" target="_blank" ><span>我的收藏</span></a></li>
+          <li><a href="elitelist.html"   target="_blank"><span>精选研报</span></a></li>
+          <li><a href="pictbg.html"  target="_blank"   ><span>图片研报</span></a></li>
+        </ul>
+        
+        <ul >
+          
+          <li><a href="hytop.html"  target="_blank"><span>热点研报</span></a></li>
+          <li><a href="wnote.html" target="_blank"><span>我的云笔记</span></a></li>
+          <li><a href="author_new.asp?bigtype=2"  target="_blank"><span>知名分析师</span></a></li>
+        </ul>
+        <ul style="background:none">
+           <li><a href="world.html"  target="_blank"> 全球市场 </a></li>
+         <li><a href="http://hqq.hibor.com.cn/microbellhq/stock.asp"  target="_blank">在线行情 </a></li>
+         <!-- <li><a href="bovilist.html" target="_blank">视频书籍</a></li>-->
+          <li><a href="soft/sjb/index.html" target="_blank"><span>手机终端</span></a></li>
+        </ul>
+      </div>
+    </div>
+  
+  <div class="dt3">
+          
+          <a href="soft/download.html" target="_blank"><img src="images/ad/adtop.gif" width="980" style="margin-bottom:8px; border:0px;" /></a>
+          
+  </div>
+  
+    <!--导航结束-->
+	<!--页面包含头部结束-->
+
+    <!--貌似是俩锚点-->
+<a name="repflag"></a>
+<a name="top"></a>
+
+    <!--头部结束-->
+ <!--图片研报开始-->
+ <!--图片研报结束-->
+  <!--大图开始-->
+  <!--大图结束-->
+  <!--页面开始-->
+  <div class="dt3">
+     <div class="leftlbb">
+     	<div class="lbbg">位置：首页 >> <a href="microns_19_1.html" target="_blank">投资组合</a></div>  
+         
+       <div class="leftn2">
+       <div style="background:#f8f8f8; float:left; width:650px;">
+        <h1>
+        <img src="images/title02.jpg"/><span>研究报告：广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626</span></h1> <!--标题-->
+		<script>
+        function aausc_ajax(did,title,type)
+        {
+         usc_ajax(did,title,type);
+        }
+        
+        </script>  
+        
+        
+        
+<img style="float:right; margin-right:20px; margin-bottom:10px; cursor:pointer;" onClick="aausc_ajax(1615977,'广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626',1)" src="images/yun.gif"  />  <!--云收藏按钮-->
+        <a href="hytop.html" style="float:right;margin-right:20px;  " target="_blank"><img src="images/lookHot.gif" /></a>
+        
+
+		    
+
+
+<!--研报信息表格-->
+        <table border="0" align="center" cellpadding="0" cellspacing="0" class="btab" style="  width:600px;">  
+           <tr><td width="30%" >股票名称：  <span><a href="result.asp?lm=0&area=DocTitle&timess=3&key=&dtype=1" target="_blank"></a></span></td> <td width="30%">股票代码： <span><a href="result.asp?lm=0&area=DocTitle&timess=3&key=&dtype=1" target="_blank"></a></span></td><td width="40%">上传时间：<span>2015-6-26 10:00:13</span></td></tr><tr><td>研报栏目： <span><a href="microns_19_1.html" target="_blank">投资组合</a></span></td>  <td>研报类型： <span ><img src="images/type/pdf.gif" style="vertical-align:middle;"/><span style="font-size:12px;" >(PDF)</span></span></td>  <td>研报作者： <span ><a href="result.asp?lm=0&area=DocAuthor&timess=3&key=%D1%EE%D1%E0&dtype=1" target="_blank">杨燕</a></span></td></tr>  <tr><td>研报出处： <span><a href="result.asp?lm=0&area=DocPublish&timess=3&key=%B9%E3%B7%A2%D6%A4%C8%AF&dtype=1" target="_blank">广发证券</a></span></td> <td >研报页数： <span>7 页</span></td> <td>推荐评级： <span>无</span></td></tr> <tr><td colspan="2">研报大小： <span>418 KB</b></span></td>
+        <td align="right">
+        
+       <script>
+        var html88 = '<iframe scrolling="no" src="baocuo.asp?id=1615977" width=490 height=360 frameborder="0"></iframe>';
+		var	footerhtml88='';
+
+        </script>
+
+ 
+       <span style=" width:70px; height:28px; border:none;cursor:pointer; color:#06C; font:'黑体' 13px; font-size:13px; margin-left:130px; margin-top:5px; font-weight:700;  line-height:26px; float:left; text-decoration:underline" onClick="javascript:Box('msg6',490,360,html88,footerhtml88)"  >我要报错</span>
+        </td></tr>
+          </table>
+<!--研报信息表格结束-->
+  
+
+
+<!--下载阅读按钮-->  
+ 
+
+       <div class="anniu_main">
+		 <!-- <a href="#" ><img  onclick="javascript:Box('msg6',800,435,html7,footerhtml7)" src="images/dij.png" width="143" height="36" style=" cursor:pointer"  id="view"/></a>
+          <a href="#" ><img  onclick="javascript:Box('msg6',800,435,html7,footerhtml7)" src="images/download.png" width="143" height="36" style=" cursor:pointer" alt="研究报告下载"></a>
+		 <a href="#" ><img  onclick="javascript:Box('msg6',800,435,html7,footerhtml7)" src="images/xunlei.png"width="143" height="36" style=" cursor:pointer" alt="研究报告下载"></a>
+         <a href="pdfsoft/AdbeRdr1000_zh_CN.exe" ><img src="images/pdf_down.gif" width="143" height="36" /></a>-->
+         
+         
+                
+                <!-- <a  onclick="pinglunDIV()"   href="" target="_blank"> -->
+                 <a  onclick="pinglunDIV()"  href="webpdf.asp?t=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&uname=&did=1615977&degree=1&baogaotype=19&fromurl=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%2Easp%3Fid%3D1615977&fromtype=21" target="_blank"> 
+				                  
+                 <img src="images/dij.png" width="143" height="36"  id="view"/></a>
+         <A href="webdownload.asp?doctitle=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&uname=&did=1615977&degree=1&baogaotype=19&fromurl=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%2Easp%3Fid%3D1615977&fromtype=21"  onclick="pinglunDIV()"><img src="images/download.png" width="143" height="36" alt="研究报告下载"></A>
+		 <A href="webxunlei.asp?t=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&uname=&did=1615977&degree=1&baogaotype=19&fromurl=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%2Easp%3Fid%3D1615977&fromtype=21&Pid=13950"  onclick="pinglunDIV()"><img src="images/xunlei.png"width="143" height="36" alt="研究报告下载"></A>
+	     <a href="pdfsoft/AdbeRdr1000_zh_CN.exe" ><img src="images/pdf_down.gif" width="143" height="36" /></a>
+         
+         
+      </div>
+  
+  	   
+
+</div>
+
+
+<!--下载阅读按钮结束-->  
+
+
+
+
+
+<script>
+function guanma()
+{
+document.getElementById("erweimadiv").style.display='none';
+}
+function chuma()
+{
+document.getElementById("erweimadiv").style.display='block';
+}
+</script>
+
+
+
+    <div style="clear:both"></div>
+           
+    <div id="talkline" style="width:600px;height:300px; margin-left:10px; margin-top:10px;background-color:#ffffff; display:none" class="pil">
+        <div id="talkscore" class="talkstyle">
+         
+        <h2 style="font-family:'微软雅黑';color:#D20202;padding-left:1px;height:37px;line-height:37px;font-size:15px;padding-top:10px;padding-bottom:10px;"><img src="images/pil_tub.gif"  />我要给此报告打分</h2>
+        <span class="spanradio" onClick="document.getElementById('rdefen5').click()"><input type="radio" name="radio1" id="rdefen5" value="100"  />优 (100分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen4').click()"><input type="radio" name="radio1" id="rdefen4" value="80"  />良 (80分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen3').click()"><input type="radio" name="radio1" id="rdefen3" value="60"  />中 (60分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen2').click()"><input type="radio" name="radio1" id="rdefen2" value="40"  />可 (40分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen1').click()"><input type="radio" name="radio1" id="rdefen1" value="20" />差 (20分) </span>
+       
+                
+        </div>
+        <div id="popup" style="width:580px;height:100px; margin-left:10px;display:block; background-color:#FFFFFF; position:relative;margin-top:15px;" class="talkstyle">
+            <div style="float:left"><span style="margin-left:18px; font-size:13px;font-weight:bolder; color:#F00">我要评价:</span></div>
+            <div style="float:right"><span style="margin-left:10px; font-size:12px;">
+			暂无评价</span></div>
+            <br />
+            <div style="padding-left:20px;"><textarea class="wb22" id="txtcontent" name="txtcontent"   rows="3" title="" cols="78" style="overflow:hidden;resize:none"  onKeyUp="zishu();"></textarea></div>
+        <div style="width:610px;">
+        <div style="float:left;width:480px;_width:360px;background:#f6f6f6; margin-left:20px; margin-top:5px; height:25px; line-height:25px;"><span style=" display:block; color:#868181; " id="zs">&nbsp;</span></div>
+        <div style="float:right; margin-right:5px;margin-top:3px;"><input id="tijiao" name="tijiao"  type="button" value="提交" onClick="Talk();"  style=" width:80px; height:30px; background:url(../images/tj.jpg); color:#FFF; border:0px; font-weight:bold; font-size:14px; cursor:pointer;"></div>
+        </div>
+
+        </div> 
+    </div>	
+    
+    
+<div class="ul_div">
+  <ul>
+    <li><img src="images/my.gif" /><a href="http://www.hibor.com.cn/wnote.html" target="_blank">我的云笔记：记一记我的投资感想 </a></li>
+    <li><img src="images/new.gif" /><a href="http://www.hibor.com.cn/upfile/如何阅读研究报告.pdf" target="_blank">强烈推荐：如何阅读研究报告?(新) </a></li>
+    <li><img src="images/he.gif" /><a href="about.html#team" target="_blank">慧博产品合作加盟</a></li>
+  </ul>
+  </div>
+
+
+
+<!--<div class="pil">
+  <h2><img src="images/pil_tub.gif"  />我要给此报告打分</h2>
+  <form>
+  <input type="radio"/>优（100分）   <input type="radio"/>  良（80分）   <input type="radio"/>   中（60分）<input type="radio"/>      可（40分）   <input type="radio"/>    差（20分）
+    <p class="pijia"><span class="my">我要评价：</span><span class="zt">暂无评价</span></p>
+  <textarea style="float:left;"></textarea>
+  <p style="float:right"><input type="submit" value="提交"  class="submit"/></p>
+  </form>
+  </div>-->
+  
+  <div id="erweimadiv" style="width:280px; height:310px; border:1px solid #CCCCCC; font-size:12px; position:absolute; margin-top:-150px; margin-left:0px; display:none; background-color:#fff">
+<div style="float:right;margin-top:8px; margin-bottom:5px;"><span style="margin-right:70px;">分享到微信朋友圈</span><a href="javascript:void(0);" style=" text-decoration:none; color:#FF0000; font-size:16px" onClick="guanma()" ><img src="imagesf/ico/closeweixin.jpg" style="margin-right:15px;"></a></div>
+<div style="text-align:center; margin-top:5px;"><!--<img src="http://qr.liantu.com/api.php?text=" width="200" height="200" />-->
+<img src="http://api.k780.com:88/?app=qr.get&data=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fwap%5Fdetail%2Easpx%3Fid%3D1615977%26un%3D%26wp%3D2%26fromtype%3D2%26sm%3D1" width="200" height="200" style="margin:0 auto; padding:0; margin:10px 0;" />
+</div>
+<div style="margin-top:5px; padding:10px; line-height:24px; margin-left:10px;">打开微信，点击底部的"发现"，<br />使用"扫一扫"即可将网页分享至朋友圈。</div>
+</div>
+
+   <!--摘要-->
+  <div class="zhaiy"> <h3><img src="images/zy.gif" width="30" />【研究报告内容摘要】</h3>
+      <div class="fengx" id="erweimadiv"   >
+    分享到：
+    <a href="javascript:void(0);" onClick="chuma()"><img src="images/weix.gif" />微信朋友圈</a>
+    <a target="_blank"  href="http://v.t.sina.com.cn/share/share.php?title=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&amp;url=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%5F1615977%2Ehtml&amp;pic=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fimages%5Fdonet%2Flogo%2Egif&amp;source=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%5F1615977%2Ehtml"   ><img src="images/sinan.gif" /> 新浪微博</a> 
+    <a target="_blank" href="http://share.v.t.qq.com/index.php?c=share&a=index&title=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&url=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%5F1615977%2Ehtml&appkey=&site=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%5F1615977%2Ehtml&pic=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fimages%5Fdonet%2Flogo%2Egif"  ><img src="images/tengx.gif" />   腾讯微博</a>
+    <a target="_blank" href="http://tieba.baidu.com/f/commit/share/openShareApi?title=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&desc=&comment=%B9%E3%B7%A2%D6%A4%C8%AF%2D%B9%E3%B7%A2%D6%E9%BA%A3%B2%C6%B8%BB%B1%A61%BA%C5%C1%E9%BB%EE%C5%E4%D6%C3%D0%CD%BD%F0%B9%DC%BC%D2%CD%B6%D7%CA%CA%BE%B7%B6%D7%E9%BA%CF%2D150626&pic=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fimages%5Fdonet%2Flogo%2Egif&url=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fdocdetail%5F1615977%2Ehtml"  ><img src="images/baidu.gif" />百度贴吧</a>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="neir">
+   
+    <div class="p_main">
+<p>
+               <font style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;[昨ta日bl操e_作pl点an评]&nbsp;:<br>&nbsp;&nbsp;&nbsp;&nbsp;广州友谊（000987）36.18&nbsp;元买入9000&nbsp;股（因开盘价低于36.5&nbsp;元的委托价，故以开盘价成交）。<font style="display:none;"><a href='http://www.hibor.com.cn/'>http://www.hibor.com.cn【慧博投研资讯】</a></font><br>&nbsp;&nbsp;&nbsp;&nbsp;川大智胜（002253）盘中跌破50&nbsp;元的止损价，止损离场。<font style="display:none;"><a href='http://www.hibor.com.cn/'>http://www.hibor.com.cn（慧博投研资讯）</a></font><br>&nbsp;&nbsp;&nbsp;&nbsp;昨日市场简评:<br>&nbsp;&nbsp;&nbsp;&nbsp;周四大盘未能延续反弹，反而逐波下行，尾市再次出现跳水走势。大盘走势较预期弱，后市有继续考验60&nbsp;日线支撑的可能，一旦60&nbsp;日线再次失守，短线快速收复的难度将加大。操作上建议将仓位控制在五成以内，静待大盘企稳。<br>&nbsp;&nbsp;&nbsp;&nbsp;今日操作计划:无<br></font>
+</p>
+    
+    </div>
+    </div>
+    
+    <div id="viewmore" class="open"><a href="#">阅读更详细的内容请直接浏览报告原文<img src="images/type/pdf.gif" style="vertical-align:middle;"/><span style="font-size:12px;" >(PDF)</span></a> </div>
+    <div class="copy"><span>推荐给朋友:</span>             
+    <input type="text"  id="txtbox_item" name="txtbox_item"  style="width:420px;" value="http://www.hibor.com.cn/docdetail_1615977.html  广发证券-广发珠海财富宝1号灵活配置型金管家投资示范组合-150626" class="addres" /><input type="submit" name="button" id="button" value=""  class="copy_bt" onclick ="copy_clip(document.getElementById('txtbox_item').value)"/>
+<a href="soft/download.html" target="_blank"><img src="images/ad/adlit.gif" width="630"  style="margin:0 auto;margin-top:15px;display:block; "/></a></div>
+      </div>
+     </div>
+     </div>
+
+      
+       
+ <script type="text/javascript">
+    $(document).ready(function() {
+    $.jqtab = function(tabtit,tabcon) {
+        $(tabcon).hide();
+        $(tabtit+" li:first").addClass("thistab").show();
+        $(tabcon+":first").show();
+        $(tabtit+" li").click(function() {
+									   
+            $(tabtit+" li").removeClass("thistab");
+            $(this).addClass("thistab");
+            $(tabcon).hide();
+            var activeTab = $(this).find("a").attr("tab");
+            $("#"+activeTab).fadeIn();
+             return false;
+        });
+        
+    };
+       /*调用方法如下：*/
+	    $.jqtab("#tabs9",".tab_con9");
+	    $.jqtab("#tabs7",".tab_con7");
+	    $.jqtab("#tabs5",".tab_con5");
+	    $.jqtab("#tabs6",".tab_con6");
+    });
+ </script>
+ 
+ 
+<!--大盘图-->
+<div class="right1">
+
+<div class="dpzs">
+ <div class="dubg">
+
+  <DIV  style="text-align:left; font-size:14px;line-height:30px; padding-left:15px; ">大盘走势</DIV>
+    <DIV  id="shuaxin" style="text-align:center">
+      <DIV class=index_guild>
+          <UL>
+          <LI  style="margin-left:0px;cursor:pointer"  class=active onmouseover=nTab(this,0) >上证 </LI>
+          <LI class=nomal onmouseover=nTab(this,1) style="cursor:pointer">深证 </LI>
+          <LI class=nomal onmouseover=nTab(this,2) style="cursor:pointer">沪B </LI>
+          <LI class=nomal onmouseover=nTab(this,3) style="cursor:pointer">深B </LI>
+          <LI class=nomal onmouseover=nTab(this,4) style="cursor:pointer">300</LI>
+          </UL>
+      </DIV>
+      
+      <DIV id=c0 class=right_img><IMG src="http://img.hibor.com.cn/imagesdapan/shzzs_ns.jpg" alt="上证指数" width="248" height="159"></DIV>
+      <DIV style="DISPLAY: none" id=c1 class=right_img><IMG src="http://img.hibor.com.cn/imagesdapan/szcz_ns.jpg" alt="深证成指" width="248" height="159"> </DIV>
+      <DIV style="DISPLAY: none" id=c2 class=right_img><IMG src="http://img.hibor.com.cn/imagesdapan/shzbg_ns.jpg" width="248" alt="沪市B股指数" height="159"> </DIV>
+      <DIV style="DISPLAY: none" id=c3 class=right_img><IMG src="http://img.hibor.com.cn/imagesdapan/szbg_ns.jpg" width="248" alt="深市B股指数" height="159"> </DIV>
+      <DIV style="DISPLAY: none" id=c4 class=right_img><IMG src="http://img.hibor.com.cn/imagesdapan/hs300_ns.jpg" width="248" alt="沪深300指数" height="159"> </DIV>
+      
+    </DIV>
+  </DIV>
+ 
+ </div>
+<!--大盘图结束-->
+         
+<!--概念选项卡-->
+
+
+    <div id="tabbox7" class="tabbox7" style="border-top:0px;">
+       <div class="hovers"><img src="images/hy.gif" style="border:none;" width="320" height="41" /></div>
+      
+        <ul class="tab_conbox" >
+        <li id="tab18" class="tab_con7">
+<table align="center" width="96%"><tr height="4"><td></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BD%F0%C8%DA%B7%FE%CE%F1"  target="_blank">金融服务</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B7%BF%B5%D8%B2%FA"  target="_blank">房地产</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D3%D0%C9%AB%BD%F0%CA%F4" target="_blank">有色金属</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D2%BD%D2%A9%C9%FA%CE%EF" target="_blank">医药生物</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BB%AF%B9%A4"  target="_blank">化工行业</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BB%FA%D0%B5%C9%E8%B1%B8"  target="_blank">机械设备</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BD%BB%CD%A8%D4%CB%CA%E4"  target="_blank">交通运输</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%C5%A9%C1%D6%C4%C1%D3%E6" target="_blank">农林牧渔</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B5%E7%D7%D3"  target="_blank">电子行业</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D0%C2%C4%DC%D4%B4" target="_blank">新能源</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BD%A8%D6%FE%BD%A8%B2%C4"  target="_blank">建筑建材</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D0%C5%CF%A2%B7%FE%CE%F1"  target="_blank">信息服务</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%C6%FB%B3%B5"  target="_blank">汽车行业</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BA%DA%C9%AB%BD%F0%CA%F4"  target="_blank">黑色金属</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B2%C9%BE%F2"  target="_blank">采掘行业</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%BC%D2%D3%C3%B5%E7%C6%F7"  target="_blank">家用电器</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B2%CD%D2%FB%C2%C3%D3%CE"  target="_blank">餐饮旅游</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B9%AB%D3%C3%CA%C2%D2%B5"  target="_blank">公用事业</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%C9%CC%D2%B5%C3%B3%D2%D7"  target="_blank">商业贸易</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D0%C5%CF%A2%C9%E8%B1%B8"  target="_blank">信息设备</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%CA%B3%C6%B7%D2%FB%C1%CF"  target="_blank">食品饮料</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%C7%E1%B9%A4%D6%C6%D4%EC"  target="_blank">轻工制造</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B7%C4%D6%AF%B7%FE%D7%B0"  target="_blank">纺织服装</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%D0%C2%C4%DC%D4%B4%C6%FB%B3%B5"  target="_blank">新能源汽车</a></td></tr><tr height="23"><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%B8%DF%B6%CB%D7%B0%B1%B8%D6%C6%D4%EC"  target="_blank">高端装备制造</a></td><td width="33%" align="left"><a href="super_hyreport.asp?oneid=%C6%E4%CB%FB"  target="_blank">其他行业</a></td><td width="33%" align="left"></td></tr></table><table width="98%"  border=0 style="margin-left:0px; border-top:0px solid #333; float:left;"><tr><td width="99%" align="left"     style="font-size:12px; color:#c42732; ">以上行业显示为大行业分类，点击进入可选择细分行业</td></tr></table>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+<!--概念选项卡结束-->
+         
+<!--今日热点与本周热点-->
+         
+    
+    
+    <div id="tabbox9" class="tabbox9">
+       <ul class="tabsr" id="tabs9">
+         <li ><a href="#" tab="tab16" >今日热点</a></li>
+         <li><a href="#" tab="tab17">本周热点</a></li>
+       </ul>
+      
+        <ul class="tab_conboxx">
+        <li id="tab16" class="tab_con9">
+            <div class="rankingx"><em class="blueBox">1</em><A  title="海通证券-实体经济观察2015年第24期：形势未改，政策换档-150625" href="docdetail_1615553.html" target="_blank"><i>海通证券-实体经济观察2015年第24期：形…</i></A></div><div class="rankingx"><em class="blueBoxMid">2</em><A  title="国泰君安-实体经济研判之十四：经济低位暂稳，新能源汽车爆发-150624" href="docdetail_1615551.html" target="_blank"><i>国泰君安-实体经济研判之十四：经济低位…</i></A></div><div class="rankingx"><em class="blueBoxLight">3</em><A  title="中信建投-区域投资风险及机会分析：东风西渐，自上而下-150625" href="docdetail_1615739.html" target="_blank"><i>中信建投-区域投资风险及机会分析：东风…</i></A></div><div class="rankingx"><em class="">4</em><A  title="广发证券-电力行业中期投资策略：把握三大投资主题，地方电网＋企业转型＋估值修复-150625" href="docdetail_1615776.html" target="_blank"><i>广发证券-电力行业中期投资策略：把握三…</i></A></div><div class="rankingx"><em class="">5</em><A  title="安信证券-传媒行业：音乐产业，待到风起时，收拾旧山河-150624" href="docdetail_1615535.html" target="_blank"><i>安信证券-传媒行业：音乐产业，待到风起…</i></A></div><div class="rankingx"><em class="">6</em><A  title="招商证券-股票投资周报：中国智造（工业4.0）核心标的调研纪要；国企改革概念股-150625" href="docdetail_1615516.html" target="_blank"><i>招商证券-股票投资周报：中国智造（工业…</i></A></div><div class="rankingx"><em class="">7</em><A  title="高华证券-中国经济分析：国务院常务会议推出三项温和积极举措，但关于货币政策立场可能调整的担忧上升-150624" href="docdetail_1615683.html" target="_blank"><i>高华证券-中国经济分析：国务院常务会议…</i></A></div><div class="rankingx"><em class="">8</em><A  title="广证恒生-顶级策略（2015.6.25第2288期）：深V再现反弹确立-150625" href="docdetail_1615615.html" target="_blank"><i>广证恒生-顶级策略（2015.6.25第2288期…</i></A></div><div class="rankingx"><em class="">9</em><A  title="国金证券-银行行业：贷存比取消，银行重大利好落地＋1，重申强烈看好！-150624" href="docdetail_1615778.html" target="_blank"><i>国金证券-银行行业：贷存比取消，银行重…</i></A></div><div class="rankingx"><em class="">10</em><A  title="平安证券-生物医药行业2015年中期策略报告：攻守兼顾，均衡配置-150625" href="docdetail_1615664.html" target="_blank"><i>平安证券-生物医药行业2015年中期策略报…</i></A></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="toprank_1.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div><div style="clear:both"></div>
+        </li>
+
+        <li id="tab17" class="tab_con9">
+			<div class="rankingx"><em class="blueBox">1</em><A  title="广证恒生-2015年A股中期策略：牛在途中-150619" href="docdetail_1612627.html" target="_blank"><i>广证恒生-2015年A股中期策略：牛在途中…</i></A></div><div class="rankingx"><em class="blueBoxMid">2</em><A  title="国信证券-策略专题：抄底新消费-150619" href="docdetail_1612495.html" target="_blank"><i>国信证券-策略专题：抄底新消费-150619…</i></A></div><div class="rankingx"><em class="blueBoxLight">3</em><A  title="广发证券-次新股+估值周报（6月第3期）：被“砸开”的次新股是绝佳投资品！-150621" href="docdetail_1612676.html" target="_blank"><i>广发证券-次新股+估值周报（6月第3期）…</i></A></div><div class="rankingx"><em class="">4</em><A  title="中金公司-2015下半年A股策略展望去伪存真-150623" href="docdetail_1613107.html" target="_blank"><i>中金公司-2015下半年A股策略展望去伪存…</i></A></div><div class="rankingx"><em class="">5</em><A  title="兴业证券-A股市场策略：暴跌后多一份怜悯之心-150622" href="docdetail_1612882.html" target="_blank"><i>兴业证券-A股市场策略：暴跌后多一份怜…</i></A></div><div class="rankingx"><em class="">6</em><A  title="海通证券-宏观专题报告：国企改革的逻辑、进展与展望-150624" href="docdetail_1614677.html" target="_blank"><i>海通证券-宏观专题报告：国企改革的逻辑…</i></A></div><div class="rankingx"><em class="">7</em><A  title="中金公司-A股下半年行业比较与配置：更加注重增长复苏-150623" href="docdetail_1613377.html" target="_blank"><i>中金公司-A股下半年行业比较与配置：更…</i></A></div><div class="rankingx"><em class="">8</em><A  title="国泰君安-中小盘并购重组主题报告：二次上车机会掘金并购失败股-150615" href="docdetail_1612422.html" target="_blank"><i>国泰君安-中小盘并购重组主题报告：二次…</i></A></div><div class="rankingx"><em class="">9</em><A  title="中金公司-中国宏观专题报告：资本账户开放你准备好了吗？-150623" href="docdetail_1613357.html" target="_blank"><i>中金公司-中国宏观专题报告：资本账户开…</i></A></div><div class="rankingx"><em class="">10</em><A  title="海通证券-机械行业智能制造工业4.0系列（2）：互联网＋的支点，中国“智”造的脊梁-150623" href="docdetail_1614135.html" target="_blank"><i>海通证券-机械行业智能制造工业4.0系列…</i></A></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="toprank_7.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div><div style="clear:both"></div>
+        </li>
+      </ul>
+    </div>
+    
+    
+    
+    
+<!--今日热点与本周热点结束-->
+
+
+
+<!--热门行业-->
+    <div class="rm"><a href="toprank_2.html" target="_blank" style="border:none;"><img src="images/rmhy.gif" style="border:none;" /></a></div>
+    <div class="rmn" > 
+      <div class="module_list2"><div class="news_title1"><A   href="docdetail_1614135.html" target="_blank" title="海通证券-机械行业智能制造工业4.0系列（2）：互联网＋的支点，中国“智”造的脊梁-150623">海通证券-机械行业智能制造工业4.0系列（2）… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1614381.html" target="_blank" title="兴业证券-医药行业2015年下半年投资策略：结构分化中把握新兴成长和转型两条主线-150622">兴业证券-医药行业2015年下半年投资策略：结… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1614419.html" target="_blank" title="中金公司-金融行业：牛市中后期品种-150623">中金公司-金融行业：牛市中后期品种-150623… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612226.html" target="_blank" title="广发证券-环保行业2015年下半年投资策略：变大、模式革新-150619">广发证券-环保行业2015年下半年投资策略：变… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612374.html" target="_blank" title="艾瑞咨询-2015年中国互联网金融发展格局研究报告-150618">艾瑞咨询-2015年中国互联网金融发展格局研究… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1613892.html" target="_blank" title="安信证券-电子元器件行业：市场调整中配置什么-150623">安信证券-电子元器件行业：市场调整中配置什… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612445.html" target="_blank" title="国泰君安-白酒行业：国企改革有望提速，旺季量价改善值得期待-150619">国泰君安-白酒行业：国企改革有望提速，旺季… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1613926.html" target="_blank" title="银河证券-机械军工行业：中国制造2025，十年迈向制造强国-150623">银河证券-机械军工行业：中国制造2025，十年… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612628.html" target="_blank" title="国联证券-天然气行业2015年中期投资策略：寻觅“气改”大年投资机会-150619">国联证券-天然气行业2015年中期投资策略：寻… </A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612462.html" target="_blank" title="国联证券-医药生物行业2015年中期投资策略：风继续吹，关注行业变革创新-150619">国联证券-医药生物行业2015年中期投资策略：… </A></div></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="toprank_2.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div><div style="clear:both"></div>
+    </div>
+<!--热门行业结束-->
+
+
+
+<!--评级选项卡-->
+    <div id="tabbox5">
+       <ul class="tabsr" id="tabs5">
+         <li ><a href="#" tab="tab11">最新推荐</a></li>
+         <li><a href="#" tab="tab12">最新买入</a></li>
+         <li><a href="#" tab="tab13">最新上调</a></li>
+       </ul>
+      
+        <ul class="tab_conbox">
+        <li id="tab11" class="tab_con5">
+			<div class="module_list2"><div class="news_title1"><A   href="docdetail_1616218.html" target="_blank" title="长江证券-银江股份-300020-点评报告：设立美国华人网络医院，抢占高端医疗资源入口-150625">长江证券-银江股份-300020-点评报告：设立美…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1616106.html" target="_blank" title="东吴证券-金固股份-002488-事件点评：再融资落地，奠定公司后市场龙头地位-150624">东吴证券-金固股份-002488-事件点评：再融资…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615933.html" target="_blank" title="银河证券-西藏珠峰-600338-有色准新股，“一带一路”新标兵-150625">银河证券-西藏珠峰-600338-有色准新股，“一…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615921.html" target="_blank" title="银河证券-中鼎股份-000887-成立“互联网+”产业并购基金；汽车后市场、环保发动机等打开成长空间-150624">银河证券-中鼎股份-000887-成立“互联网+”…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615918.html" target="_blank" title="平安证券-史丹利-002588-推出员工持股，看好向农业服务转型-150626">平安证券-史丹利-002588-推出员工持股，看好…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615861.html" target="_blank" title="民生证券-秦川机床-000837-机器人关节减速器产能即将释放-150625">民生证券-秦川机床-000837-机器人关节减速器…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615859.html" target="_blank" title="民生证券-积成电子-002339-研究报告：设立新能源产业基金，完善能源互联网布局，强推-150624">民生证券-积成电子-002339-研究报告：设立新…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615848.html" target="_blank" title="民生证券-万达院线-002739-收购HG Holdco点评：稳步推进国际化发展战略，加大提高全球市场占有率-150624">民生证券-万达院线-002739-收购HG&nbsp;Holdco点…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615793.html" target="_blank" title="民生证券-中色股份-000758-一带一路+国企改革；双重利好拉动股价上涨-150623">民生证券-中色股份-000758-一带一路+国企改…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615790.html" target="_blank" title="民生证券-奥瑞金-002701-非公开发行股票预案点评：非公开发行募集25亿元，助力公司未来发展战略-150624">民生证券-奥瑞金-002701-非公开发行股票预案…</A></div></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="newrank_1.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div>
+        </li>
+
+        <li id="tab12" class="tab_con5">
+			<div class="module_list2"><div class="news_title1"><A   href="docdetail_1616227.html" target="_blank" title="广发证券-建筑材料行业：淡季需求走弱，看好三条主线的个股机会-150626">广发证券-建筑材料行业：淡季需求走弱，看好…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1616174.html" target="_blank" title="广发证券-南都电源-300068-收购铅回收企业，完善产业链增强盈利能力-150626">广发证券-南都电源-300068-收购铅回收企业，…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1616172.html" target="_blank" title="东方证券-上海石化-600688-从抚顺石化盈利逐月上升看上海石化的盈利反转-150625">东方证券-上海石化-600688-从抚顺石化盈利逐…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1616108.html" target="_blank" title="广发证券-铁汉生态-300197-公告点评：频签合作协议，全力进军水污染治理-150626">广发证券-铁汉生态-300197-公告点评：频签合…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1616014.html" target="_blank" title="西南证券-佛慈制药-002644-受让中药配方颗粒技术，迎政策开放盛宴-150625">西南证券-佛慈制药-002644-受让中药配方颗粒…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615972.html" target="_blank" title="广发证券-银行业：取消存贷比考核缓解揽储压力，利于信贷投放支持实体-150625">广发证券-银行业：取消存贷比考核缓解揽储压…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615945.html" target="_blank" title="申万宏源-长百集团-600856-具备全球化扩张思维的A股燃气标的-150625">申万宏源-长百集团-600856-具备全球化扩张思…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615920.html" target="_blank" title="元大证券-中青旅-600138-复制乌镇成功经验-150623">元大证券-中青旅-600138-复制乌镇成功经验-…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615916.html" target="_blank" title="中金公司-上海家化-600315-拟与片仔癀成立合资公司进入口腔护理领域，维持确信买入-150626">中金公司-上海家化-600315-拟与片仔癀成立合…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615776.html" target="_blank" title="广发证券-电力行业中期投资策略：把握三大投资主题，地方电网＋企业转型＋估值修复-150625">广发证券-电力行业中期投资策略：把握三大投…</A></div></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="newrank_2.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div>
+        </li>
+
+         <li id="tab13" class="tab_con5">
+			<div class="module_list2"><div class="news_title1"><A   href="docdetail_1615918.html" target="_blank" title="平安证券-史丹利-002588-推出员工持股，看好向农业服务转型-150626">平安证券-史丹利-002588-推出员工持股，看好…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615397.html" target="_blank" title="齐鲁证券-河北钢铁-000709-国企改革＆京津冀标的-150624">齐鲁证券-河北钢铁-000709-国企改革＆京津冀…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1615088.html" target="_blank" title="长江证券-中鼎股份-000887-点评报告：并购基金成立，首要布局汽车后市场O2O，建议积极关注-150624">长江证券-中鼎股份-000887-点评报告：并购基…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1614645.html" target="_blank" title="中信建投-泸州老窖-000568-上市公司简评：短期受催化剂影响，下半年业绩弹性值得期待-150624">中信建投-泸州老窖-000568-上市公司简评：短…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1614384.html" target="_blank" title="长江证券-河北钢铁-000709-点评报告：行业龙头，受益于京津冀和产能淘汰政策-150624">长江证券-河北钢铁-000709-点评报告：行业龙…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1613511.html" target="_blank" title="东兴证券-红宝丽-002165-实际控制人及员工持股计划大比例认购，锁定三年彰显未来信心-150618">东兴证券-红宝丽-002165-实际控制人及员工持…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1613490.html" target="_blank" title="安信证券-新世界-600628-定增转型大健康、引入战投谱新篇-150618">安信证券-新世界-600628-定增转型大健康、引…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612585.html" target="_blank" title="中银国际-红旗连锁-002697-线上线下快速扩张，形成全渠道融合发展-150611">中银国际-红旗连锁-002697-线上线下快速扩张…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612517.html" target="_blank" title="中银国际-南方泵业-300145-重大资产重组落地，大环保战略起航-150612">中银国际-南方泵业-300145-重大资产重组落地…</A></div></div><div class="module_list2"><div class="news_title1"><A   href="docdetail_1612213.html" target="_blank" title="中金公司-海兰信-300065-完美收购打造海洋防务信息化王者-150618">中金公司-海兰信-300065-完美收购打造海洋防…</A></div></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="newrank_3.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div>
+        </li>
+      </ul>
+    </div>
+
+<!--评级选项卡结束-->
+
+
+
+
+
+
+<!--精选研报与股票视频-->
+    <div id="tabbox6">
+
+       <ul class="tabsr" id="tabs6">
+       <li ><a href="#" tab="tab14">精选研报</a></li>
+ <!--      <li><a href="#" tab="tab15">股票视频</a></li>
+       <div><a href="#"  style="height:32px; line-height:32px; text-align:center; width:108px; background:#fff; float:left; font-size:13px;">更多</a></div>
+-->    </ul>
+
+        <ul class="tab_conbox">
+        <li id="tab14" class="tab_con6">
+  			<div class="module_list2"><div class="news_title1"><a href="docdetail_1616227.html" title="广发证券-建筑材料行业：淡季需求走弱，看好三条主线的个股机会-150626" target="_blank">广发证券-建筑材料行业：淡季需求走弱，看好…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1616222.html" title="申万宏源-电力行业体制改革系列报告之十三：输配电定价成本监审办法出台，新电改再迈关键一步-150625" target="_blank">申万宏源-电力行业体制改革系列报告之十三：…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1616108.html" title="广发证券-铁汉生态-300197-公告点评：频签合作协议，全力进军水污染治理-150626" target="_blank">广发证券-铁汉生态-300197-公告点评：频签合…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615945.html" title="申万宏源-长百集团-600856-具备全球化扩张思维的A股燃气标的-150625" target="_blank">申万宏源-长百集团-600856-具备全球化扩张思…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615776.html" title="广发证券-电力行业中期投资策略：把握三大投资主题，地方电网＋企业转型＋估值修复-150625" target="_blank">广发证券-电力行业中期投资策略：把握三大投…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615695.html" title="兴业证券-易所试-430309-调研报告：“喜”迎试用营销第一股，试出O2O新模式-150623" target="_blank">兴业证券-易所试-430309-调研报告：“喜”迎…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615608.html" title="广发证券-文科园林-002775-新股报告：设计施工一体化园林绿化企业-150625" target="_blank">广发证券-文科园林-002775-新股报告：设计施…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615553.html" title="海通证券-实体经济观察2015年第24期：形势未改，政策换档-150625" target="_blank">海通证券-实体经济观察2015年第24期：形势未…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615548.html" title="申万宏源-商业银行法修正案草案审议通过评论：取消存贷比，仅仅是银行松绑的开始-150625" target="_blank">申万宏源-商业银行法修正案草案审议通过评论…</a></div></div><div class="module_list2"><div class="news_title1"><a href="docdetail_1615535.html" title="安信证券-传媒行业：音乐产业，待到风起时，收拾旧山河-150624" target="_blank">安信证券-传媒行业：音乐产业，待到风起时，…</a></div></div><div  style="float:right; margin-right:20px;margin-top:5px;"><A   href="elitelist.html" target="_blank" style="font-size:13px;text-decoration:none;color:#333">更多>></A></div>
+        </li>
+            
+        <!--<li id="tab15" class="tab_con6">
+			
+		</li>-->
+        </ul>
+    
+     </div>
+<!--精选研报与股票视频结束-->
+
+
+  </div>
+</div>
+
+
+
+<div style="clear:both"></div>
+
+  <!--页面结束-->
+
+<table border="0" cellpadding="0" cellspacing="0" class="yqnr" >
+<tr><td class="yq">友情链接</td></tr>
+<tr><td style="background:#ededed; padding-top:10px; margin-bottom:10px;" >
+<table  border="0" cellpadding="0" cellspacing="0" >
+                            <tbody>
+                            <tr>
+      <td><a href="http://bbs.9666.cn/" target='_blank' title='股票论坛'>股票论坛</a></td><td><a href="http://bbs.cf8.com.cn" target='_blank' title='财富赢家论坛'>财富赢家论坛</a></td><td><a href="http://www.caixin.com" target='_blank' title='财新网'>财新网</a></td><td><a href="http://www.caijingz.com/" target='_blank' title='财经网'>财经网</a></td><td><a href="http://stock.cctvcj.com/" target='_blank' title='CCTV股票'>CCTV股票</a></td><td><a href="http://www.chinavalue.net/Investment/" target='_blank' title='价值中国网'>价值中国网</a></td><td><a href="http://www.glinfo.com/" target='_blank' title='大宗商品网'>大宗商品网</a></td><td><a href="http://www.chinairr.org" target='_blank' title='研究报告'>研究报告</a></td><td><a href="http://www.waihuigu.net/" target='_blank' title='外汇谷'>外汇谷</a></td><td><a href="http://www.591hx.com/" target='_blank' title='华讯财经'>华讯财经</a></td></tr><tr><td><a href="http://www.caiguu.com" target='_blank' title='财股网'>财股网</a></td><td><a href="http://www.7878.com/" target='_blank' title='模拟炒股'>模拟炒股</a></td><td><a href="http://www.gsdtfx.com/" target='_blank' title='股市动态分析'>股市动态分析</a></td><td><a href="http://finance.china.com.cn/" target='_blank' title='中国网财经'>中国网财经</a></td><td><a href="http://sns.cofool.com/kaihu/" target='_blank' title='叩富网'>叩富网</a></td><td><a href="http://cn.cfxintl.com/" target='_blank' title='财汇国际'>财汇国际</a></td><td><a href="http://plas.chem99.com/" target='_blank' title='卓创塑料网'>卓创塑料网</a></td><td><a href="http://www.51credit.com" target='_blank' title='信用卡'>信用卡</a></td><td><a href="http://bbs.kameng.com/" target='_blank' title='信用卡论坛'>信用卡论坛</a></td><td><a href="http://www.eastsilver.com/" target='_blank' title='东方白银网'>东方白银网</a></td></tr><tr><td><a href="http://www.d-long.cn/" target='_blank' title='投资数据库'>投资数据库</a></td><td><a href="http://www.forex.com.cn" target='_blank' title=' 外汇通 '>&nbsp;外汇通&nbsp;</a></td><td><a href="http://www.wangdaizhijia.com" target='_blank' title='P2P网贷'>P2P网贷</a></td><td><a href="http://www.fzcj.com" target='_blank' title='方舟财经'>方舟财经</a></td><td><a href="http://lead.yooli.com/" target='_blank' title='理财'>理财</a></td><td><a href="http://www.anxin.com" target='_blank' title='安心贷'>安心贷</a></td><td><a href="http://www.axatp.com/" target='_blank' title='安盛天平'>安盛天平</a></td><td><a href="http://www.my.fx678.com " target='_blank' title='外汇论坛'>外汇论坛</a></td><td><a href="http://www.rong360.com/gl/" target='_blank' title='贷款知识 '>贷款知识&nbsp;</a></td><td><a href="http://news.315.com.cn/" target='_blank' title=' 金银岛财经'>&nbsp;金银岛财经</a></td></tr><tr><td><a href="http://www.glinfo.com/" target='_blank' title='钢联资讯'>钢联资讯</a></td><td><a href="http://daikuan.hao360.cn" target='_blank' title='小额贷款'>小额贷款</a></td><td><a href="http://house.focus.cn/fangdaijisuanqi/" target='_blank' title='房贷计算器'>房贷计算器</a></td><td><a href="http://www.91jin.com/" target='_blank' title='国鑫黄金'>国鑫黄金</a></td><td><a href="http://bg.qianzhan.com/" target='_blank' title='前瞻产业研究院'>前瞻产业研究院</a></td><td><a href="http://www.yingjia360.com/" target='_blank' title='赢家财富网'>赢家财富网</a></td>
+                            </tr>
+                        </tbody></table>
+</td></tr></table>
+
+<script type="text/javascript">
+
+
+    function SetHome(obj, url) {
+        try {
+            obj.style.behavior = 'url(#default#homepage)';
+            obj.setHomePage(url);
+        } catch (e) {
+            if (window.netscape) {
+                try {
+                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                } catch (e) {
+                    alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入\"about:config\"并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                }
+            } else {
+                alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+            }
+        }
+
+
+    }
+
+    //收藏本站 bbs.ecmoban.com
+    function AddFavorite(title, url) {
+	//	url = url.replace("bottom-donet.asp","");
+        try {
+            window.external.addFavorite(url, title);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(title, url, "");
+            }
+            catch (e) {
+                alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+            }
+        }
+    }
+
+
+</script>
+
+
+<script>
+	
+	if(screen.width>="1024")
+	{
+    document.write('<div class="bot">')
+	}
+	else
+	{
+		document.write('<div class="bot800">')
+	}
+	</script>
+
+<div class="foot1">
+                        <span class="span1"><a href="javascript:void(0);" onclick="SetHome(this,'http://www.hibor.com.cn');">设为首页</a> </span><span class="span2"><a href="javascript:void(0);" onclick="AddFavorite('慧博资讯',location.href)">加入收藏</a></span>
+                        <!-- <span class="span2"><a href="about.html#aboutus" target="_blank">关于我们</a></span>-->
+                        <span class="span2"><a href="about.html#contactus" target="_blank">
+                            联系我们</a></span> <span class="span2"><a href="about.html#ad" target="_blank">广告服务</a></span> <span class="span2"><a href="archiver/index.html" target="_blank">网站地图</a></span> <span class="span2"><a href="suggestions.asp" target="_blank">反馈建议</a></span><span class="span2"><a href="zhaopin.asp" target="_blank">招贤纳士</a></span><span class="span2"><a href="about.html#team" target="_blank">合作加盟</a></span>
+                            <span class="span2"><a href="disclaimer.asp" target="_blank">免责声明</a></span><span style="clear: both"></span>
+    </div>
+</div>
+<div class="bz">客服电话：400-6623-518  &nbsp;&nbsp;&nbsp;&nbsp;客服QQ：1223015   &nbsp;&nbsp;&nbsp;客服Email：hbzixun@126.com<br /> 
+  Copyright@2002-2015 Hibor.COM.CN   备案序号：京ICP备14012269号-2  京公网安备：11011202001837 
+  
+   <div  style="font-size:14px; margin-top:20px;">
+        本网站用于投资学习与研究用途，如果您的文章和报告不愿意在我们平台展示，请联系我们，谢谢！
+         </div>
+</div>
+</div>
+<script language="JavaScript" src="http://s8.cnzz.com/stat.php?id=1752123&amp;web_id=1752123&amp;show=pic1" type="text/javascript" charset="gb2312"></script>
+
+      <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd554f0f6d738d9e505c72769d450253d' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+  
+<!--页面结束-->
+
+
+ 
+    
+    
+    <div id="faqbg"><!--蒙板层-->
+    </div>
+    
+   
+
+    
+    
+<div class="warp" id="commontDIV" style="display:none ;">
+        <div class="title2">
+            <h1>
+                <span style="float: left; padding-left: 220px;">如果觉得报告不错，扫描二维码可分享给好友哦！</span><a href="javascript:void(0);"
+                    onclick="closecomment();" class="close">关闭</a></h1>
+        </div>
+        <div class="main2" id='form1'>
+        <div style="background:#fbfafa; overflow:hidden; border-bottom:1px  solid #d3d3d3; padding:10px; width:700px;">
+            
+                 <div class="pl_right" style="float:left; width:340px; margin-right:10px; ">
+<span style="font:15px '微软雅黑'; color:#000; line-height:21px;"><img src="images/weix.png" width="20" style="height:auto; vertical-align:middle;" />&nbsp;&nbsp;将此篇报告分享给好友阅读（微信朋友圈，微信好友）</span>
+<span style="font-weight:bold; text-indent:25px;font:15px '微软雅黑';color:#f00; ">小提示：分享到朋友圈可获赠慧博币哦！</span>
+<div style="margin:0 auto; padding:0; text-align:center;">
+<!--<img src="http://qr.liantu.com/api.php?text=" width="200" height="200" style="margin:0 auto; padding:0; margin:10px 0;" />-->
+<img src="http://api.k780.com:88/?app=qr.get&data=http%3A%2F%2Fwww%2Ehibor%2Ecom%2Ecn%2Fwap%5Fdetail%2Easpx%3Fid%3D1615977%26un%3D%26wp%3D2%26fromtype%3D2%26sm%3D1" width="200" height="200" style="margin:0 auto; padding:0; margin:10px 0;" />
+
+</div>
+<span style="text-indent:2em; color:#666; font:12px/1.5 Arial,;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作方法：打开微信，点击底部“发现”，使用“扫一扫”即可分享到微信朋友圈或发送给微信好友。</span>
+
+
+</div>
+      
+      
+      <div class="pl_left" style=" margin:0; padding:0;float:left; width:305px;  border-left:1px solid #d3d3d3; padding-left:10px; ">
+            
+<div id="talklineCmt" style=" margin:0; padding:0; width:305px;   margin-top:5px; clear:both;" class="talkstyleCmt">
+            
+            
+            
+	<div id="talkscoreCmt" class="talkstyleCmt" >
+     
+	<span style=" font-size:12px;font-weight:bolder;">您还可以给此报告打分：</span><br /><br />
+    <span class="spanradio" onClick="document.getElementById('rdefen5Cmt').click()"><input type="radio" name="radio1" id="rdefen5Cmt" value="100"  />优 (100分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen4Cmt').click()"><input type="radio" name="radio1" id="rdefen4Cmt" value="80"  />良 (80分) </span>
+        <span class="spanradio" onClick="document.getElementById('rdefen3Cmt').click()"><input type="radio" name="radio1" id="rdefen3Cmt" value="60"  />中 (60分) </span><br />
+        <span class="spanradio" onClick="document.getElementById('rdefen2Cmt').click()"><input type="radio" name="radio1" id="rdefen2Cmt" value="40"  />可 (40分) </span>&nbsp;
+        <span class="spanradio" onClick="document.getElementById('rdefen1Cmt').click()"><input type="radio" name="radio1" id="rdefen1Cmt" value="20" />差 (20分) </span>
+    
+                
+	</div>
+	<div id="popup" style="width:305px;_width:305px; border:0px solid #F00; clear:both; overflow:hidden;" class="talkstyleCmt"><br />
+		<span style=" font-size:12px;font-weight:bolder;">我要点评:</span>
+		<br />
+		<!--<textarea id="txtcontentCmt" name="txtcontent"   rows="3" title="" cols="40" style="overflow:hidden;resize:none"  onkeydown="zishuCmt();"></textarea>-->
+        <div ><textarea class="wb" id="txtcontentCmt" name="txtcontent" rows="3" title="" cols="40" style="overflow:hidden;resize:none"  onKeyUp="zishuCmt();"></textarea></div>
+        <!--<input id="tijiaoCmt" name="tijiao" style="width:42px; height:51px;" type="button" value="提交"  onclick="TalkCmt();">&nbsp;
+		&nbsp;<span id="zsCmt"></span>-->
+        
+        <div class="btn"><span style="float:left; display:block; color:#868181;" id="zsCmt"></span><input id="tijiaoCmt" name="tijiao"  type="button" value="提交" onClick="TalkCmt();"  style=" width:68px; height:25px; background:url(images/k.gif); float:right; color:#FFF; border:0px; font-weight:bold; font-size:14px; cursor:pointer;"></div>
+        
+	</div> 
+     
+    
+</div>
+
+<div style="clear:both; padding-top:10px; padding-bottom:10px; color:#555; " >
+&nbsp;&nbsp;&nbsp;&nbsp;
+       为了完善报告评分体系，请在看完报告后理性打个分，以便我们以后为您展示更优质的报告。<br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;您也可以对自己点评与评分的报告在“<a href="http://www.hibor.com.cn/wnote.html" target="_blank">我的云笔记</a>”里进行复盘管理，方便您的研究与思考，培养良好的思维习惯。
+</div>
+
+
+</div>
+</div>
+
+
+
+
+       <div style="  border:0px solid #00F; width:680px; margin-left:20px; clear:both;">
+        <div class="bottom">当前终端的在线人数：<strong style="color:#f60">107281人</strong></div>
+        </div>          
+                 
+            
+    </div>
+</div>
+ 
+   <script type="text/javascript"> 
+/*function pinglunDIV()
+{
+	
+	document.getElementById("faqbg").style.display="block";
+	document.getElementById("commontDIV").style.display="block";
+}*/
+function pinglunDIV()
+{
+	
+	 window.setTimeout("abc()", 20000); 
+}
+ 
+function abc()
+{
+		 document.getElementById("faqbg").style.display="block";
+		 document.getElementById("commontDIV").style.display="block";
+}
+
+function closecomment()
+{
+	/* $("#faqbg").css("display", "none");
+     $("#commontDIV").css("display", "none");*/
+	 
+	 document.getElementById("faqbg").style.display="none";
+		 document.getElementById("commontDIV").style.display="none";
+}
+
+
+var view = document.getElementById("view"); 
+var viewmore = document.getElementById("viewmore"); 
+
+
+//通用方法 
+viewmore.onclick = function() { 
+view.click(); 
+location.hash="#repflag"
+} 
+
+
+
+
+</script> 
+</body>
+</html>
+<form name="frmtalk" method="post" action="">
+<input type="hidden" name="hduname" id="hduname" value="" />
+<input type="hidden" name="hddocurl" id="hddocurl" value="1615977" />
+<input type="hidden" name="hdregdate" id="hdregdate" value="2015-6-26" />
+</form>
