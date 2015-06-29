@@ -85,10 +85,10 @@ NEWSPIDER_MODULE = 'yang_spider.spiders'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-    'yang_spider.middlewares.ProxyMiddleware': 100,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
+#     'yang_spider.middlewares.ProxyMiddleware': 100,
+# }
 
 ITEM_PIPELINES = {
     'yang_spider.pipelines.MongoDBPipeline': 300, }
@@ -96,4 +96,14 @@ ITEM_PIPELINES = {
 MONGODB_SERVER = "182.92.225.106"
 MONGODB_PORT = 9980
 MONGODB_DB = "pydata"
-MONGODB_COLLECTION = "Reports_scrapy"
+MONGODB_COLLECTION = "Reports_crawlera"
+
+DOWNLOADER_MIDDLEWARES = {'scrapy_crawlera.CrawleraMiddleware': 600}
+CRAWLERA_ENABLED = True
+CRAWLERA_USER = 'ff1c4b73386a407fa78fd57b90e417f7'
+CRAWLERA_PASS = ''
+
+CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS_PER_DOMAIN = 32
+AUTOTHROTTLE_ENABLED = False
+DOWNLOAD_TIMEOUT = 600

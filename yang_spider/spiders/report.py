@@ -20,7 +20,7 @@ class ReportSpider(scrapy.Spider):
     # start_urls = [
     #     "http://www.hibor.com.cn/docdetail_1615977.html"
     # ]
-    # test hello
+
     start_urls = [
         "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1"
     ]
@@ -79,7 +79,8 @@ class ReportSpider(scrapy.Spider):
 
     def find_report_page(self, sel, report_urls):
         requests = []
-        report_url_xpath = '//div[@class="classbaogao_sousuo_new"]//tr/td[2]/a/@href'
+        report_url_xpath = ('//div[@class="classbaogao_sousuo_new"]//tr/td[2]'
+            '/a/@href')
         data = sel.xpath(report_url_xpath).extract()
         if len(data) != 0:
             for i in data:
