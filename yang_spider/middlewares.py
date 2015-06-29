@@ -1,3 +1,6 @@
+# -*- coding: utf8 -*-
+# author: yangxiao
+
 class ProxyMiddleware(object):
     # overwrite process request
     def process_request(self, request, spider):

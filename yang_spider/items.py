@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# author: yangxiao
 
 # Define here the models for your scraped items
 #

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# author: yangxiao
 
 # Scrapy settings for yang_spider project
 #
