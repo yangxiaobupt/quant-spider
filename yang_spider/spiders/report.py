@@ -2,13 +2,21 @@
 # author: yangxiao
 
 import time
+import pymongo
 
+from scrapy.conf import settings
 import scrapy
 import scrapy.cmdline
 from scrapy import Selector
 import logging
 
 from yang_spider.items import YangSpiderItem
+
+
+connection = pymongo.MongoClient(settings['MONGODB_SERVER'],
+                                 settings['MONGODB_PORT'])
+db = connection[settings['MONGODB_DB']]
+collection = db[settings['MONGODB_COLLECTION']]
 
 _spider_name = 'report'
 
@@ -85,10 +93,18 @@ class ReportSpider(scrapy.Spider):
         if len(data) != 0:
             for i in data:
                 report_url = "http://www.hibor.com.cn/" + i
-                report_urls.append(report_url)
-                print report_url
-                request = scrapy.Request(report_url, callback=self.parse_report)
-                requests.append(request)
+                result = collection.find_one({'url': report_url})
+                if result is None:
+                    logging.debug("It's so good! %s has never been crawled @_@"
+                                  % report_url)
+                    report_urls.append(report_url)
+                    print report_url
+                    request = scrapy.Request(report_url,
+                                             callback=self.parse_report)
+                    requests.append(request)
+                else:
+                    logging.debug("We have crawled %s and we'll skip it T_T"
+                                  % report_url)
         return requests
 
     def find_next_page(self, sel, next_pages):

@@ -34,10 +34,12 @@ class MongoDBPipeline(object):
                 valid = False
                 raise DropItem("Missing {0}!".format(data))
         if valid:
-            result = self.collection.find_one({'url': item['url']})
-            if result is None:
-                self.collection.insert(dict(item))
-                logging.debug("Item added to MongoDB database -_-")
-            else:
-                logging.debug("Item is already in the database ^_^")
+            # result = self.collection.find_one({'url': item['url']})
+            # if result is None:
+            # self.collection.insert(dict(item))
+            #     logging.debug("Item added to MongoDB database -_-")
+            # else:
+            #     logging.debug("Item is already in the database ^_^")
+            self.collection.insert(dict(item))
+            logging.debug("Item has been added to MongoDB -_-")
         return item
