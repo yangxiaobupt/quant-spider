@@ -22,7 +22,7 @@ class ReportSpider(scrapy.Spider):
     # ]
 
     start_urls = [
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1"
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2000"
     ]
 
     def parse(self, response):
