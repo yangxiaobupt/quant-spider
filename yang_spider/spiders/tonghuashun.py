@@ -13,26 +13,19 @@ import logging
 from yang_spider.items import YangSpiderItem
 
 
-connection = pymongo.MongoClient(settings['MONGODB_SERVER'],
-                                 settings['MONGODB_PORT'])
-db = connection[settings['MONGODB_DB']]
-collection = db[settings['MONGODB_COLLECTION']]
+connection = pymongo.MongoClient("182.92.225.106", 9980)
+db = connection["pydata"]
+collection = db["tonghuashun_scrapy"]
 
-_spider_name = 'report'
+_spider_name = 'tonghuashun'
 
 
 class ReportSpider(scrapy.Spider):
-    name = "report"
-    allowed_domains = ["hibor.com.cn"]
-
-    # start_urls = [
-    #     "http://www.hibor.com.cn/docdetail_1615977.html"
-    # ]
+    name = "tonghuashun"
+    allowed_domains = ["10jqka.com.cn"]
 
     start_urls = [
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1000",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2000",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3000"
+        "http://yuanchuang.10jqka.com.cn/djkuaiping_list/"
     ]
 
     def parse(self, response):
@@ -40,9 +33,9 @@ class ReportSpider(scrapy.Spider):
 
         sel = Selector(response)
 
-        report_urls = []
+        item_urls = []
         try:
-            for request in self.find_report_page(sel, report_urls):
+            for request in self.find_item_page(sel, item_urls):
                 yield request
         except:
             self.log('Exception in find_report_page', logging.ERROR)
@@ -54,7 +47,7 @@ class ReportSpider(scrapy.Spider):
         except:
             self.log('Exception in find_next_page', logging.ERROR)
 
-    def parse_report(self, response):
+    def parse_item(self, response):
         self.log('Parse item link: %s' % response.url, logging.DEBUG)
 
         sel = Selector(response)
@@ -63,19 +56,20 @@ class ReportSpider(scrapy.Spider):
         item['url'] = sel.response.url
         print item['url']
 
-        title_xpath = '//div[@class="leftn2"]//h1/span/text()'
+        title_xpath = '//div[@class="art_head"]/h1/text()'
         data = sel.xpath(title_xpath).extract()
         if len(data) != 0:
             item['title'] = data[0].encode('utf-8')
             print item['title']
 
-        pub_date_xpath = '//div[@class="leftn2"]//tr[1]/td[3]/span/text()'
+        pub_date_xpath = '//span[@id="pubtime_baidu"]/text()'
         data = sel.xpath(pub_date_xpath).extract()
         if len(data) != 0:
-            item['pub_datetime'] = data[0]
+            item['pub_datetime'] = data[0][:-2]
             print item['pub_datetime']
 
-        text_xpath = '//div[@class="p_main"]/p/font/text()'
+        text_xpath = ('//div[@class="art_main"]'
+            '/p[position()>1 and position()<last()]//text()')
         data = sel.xpath(text_xpath).extract()
         if len(data) != 0:
             item['text'] = ''.join(data).encode('utf-8')
@@ -87,34 +81,33 @@ class ReportSpider(scrapy.Spider):
 
         return item
 
-    def find_report_page(self, sel, report_urls):
+    def find_item_page(self, sel, item_urls):
         requests = []
-        report_url_xpath = ('//div[@class="classbaogao_sousuo_new"]//tr/td[2]'
-            '/a/@href')
-        data = sel.xpath(report_url_xpath).extract()
+        item_url_xpath = '//div[@class="list_item"]/div/h2/a/@href'
+        data = sel.xpath(item_url_xpath).extract()
         if len(data) != 0:
             for i in data:
-                report_url = "http://www.hibor.com.cn/" + i
-                result = collection.find_one({'url': report_url})
+                item_url = i
+                result = collection.find_one({'url': item_url})
                 if result is None:
                     logging.debug("It's so good! %s has never been crawled @_@"
-                                  % report_url)
-                    report_urls.append(report_url)
-                    print report_url
-                    request = scrapy.Request(report_url,
-                        callback=self.parse_report)
+                                  % item_url)
+                    item_urls.append(item_url)
+                    print item_url
+                    request = scrapy.Request(item_url,
+                        callback=self.parse_item)
                     requests.append(request)
                 else:
                     logging.debug("We have crawled %s and we'll skip it T_T"
-                                  % report_url)
+                        % item_url)
         return requests
 
     def find_next_page(self, sel, next_pages):
         requests = []
-        next_page_xpath = '//td/div/a/@href'
+        next_page_xpath = '//div[@class="list_pager"]/a[@class="next"]/@href'
         data = sel.xpath(next_page_xpath).extract()
         if len(data) != 0:
-            next_page = "http://www.hibor.com.cn/" + data[-1]
+            next_page = data[0]
             next_pages.append(next_page)
             print next_page
             request = scrapy.Request(next_page, callback=self.parse)
