@@ -30,9 +30,9 @@ class ReportSpider(scrapy.Spider):
     # ]
 
     start_urls = [
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1000",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2000",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3000"
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2200",
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3200",
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=4190"
     ]
 
     def parse(self, response):
