@@ -43,3 +43,10 @@ class MongoDBPipeline(object):
             self.collection.insert(dict(item))
             logging.debug("Item has been added to MongoDB -_-")
         return item
+
+class HDFSPipeline(object):
+    def __init__(self):
+        pass
+
+    def process_item(self, item, spider):
+        pass
