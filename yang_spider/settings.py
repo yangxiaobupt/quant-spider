@@ -115,7 +115,7 @@ ITEM_PIPELINES = {
 MONGODB_SERVER = "182.92.225.106"
 MONGODB_PORT = 9980
 MONGODB_DB = "pydata"
-MONGODB_COLLECTION = "Reports_crawlera_last"
+MONGODB_COLLECTION = "Reports_crawlera_pybloom"
 
 DOWNLOADER_MIDDLEWARES = {'scrapy_crawlera.CrawleraMiddleware': 600}
 CRAWLERA_ENABLED = True
