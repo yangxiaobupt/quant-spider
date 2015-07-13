@@ -1,10 +1,8 @@
 # -*- coding: utf8 -*-
 # author: yangxiao
 
-import os
 import time
 import pymongo
-from pybloom import BloomFilter
 
 from scrapy.conf import settings
 import scrapy
@@ -20,20 +18,6 @@ connection = pymongo.MongoClient(settings['MONGODB_SERVER'],
 db = connection[settings['MONGODB_DB']]
 collection = db[settings['MONGODB_COLLECTION']]
 
-
-crawled_urls = BloomFilter(capacity=1000*1000, error_rate=0.001)
-filename = './crawleditems/report_crawled_urls.txt'
-if not os.path.exists(filename):
-    if not os.path.exists('./crawleditems'):
-        os.mkdir('./crawleditems')
-    with open(filename, 'w') as f:
-        for post in collection.find():
-            print post['url']
-            f.write(post['url'] + '\n')
-with open(filename, 'r') as fp:
-    for url in fp:
-        crawled_urls.add(url.strip())
-
 _spider_name = 'report'
 
 
@@ -46,9 +30,9 @@ class ReportSpider(scrapy.Spider):
     # ]
 
     start_urls = [
-        # "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2200",
-        # "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3200",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1"
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2200",
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3200",
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=4190"
     ]
 
     def parse(self, response):
@@ -111,32 +95,15 @@ class ReportSpider(scrapy.Spider):
         if len(data) != 0:
             for i in data:
                 report_url = "http://www.hibor.com.cn/" + i
-                # result = collection.find_one({'url': report_url})
-                # if result is None:
-                #     logging.debug("It's so good! %s has never been crawled @_@"
-                #                   % report_url)
-                #     report_urls.append(report_url)
-                #     crawled_urls.add(report_url)
-                #     print report_url
-                #     request = scrapy.Request(report_url,
-                #         callback=self.parse_report)
-                #     requests.append(request)
-                # else:
-                #     logging.debug("We have crawled %s and we'll skip it T_T"
-                #                   % report_url)
-
-                if report_url not in crawled_urls:
+                result = collection.find_one({'url': report_url})
+                if result is None:
                     logging.debug("It's so good! %s has never been crawled @_@"
-                        % report_url)
+                                  % report_url)
                     report_urls.append(report_url)
-                    print 'Crawling......', report_url
+                    print report_url
                     request = scrapy.Request(report_url,
                         callback=self.parse_report)
                     requests.append(request)
-                    crawled_urls.add(report_url)
-                    fw = open(filename, 'a+')
-                    fw.write(report_url + '\n')
-                    fw.close()
                 else:
                     logging.debug("We have crawled %s and we'll skip it T_T"
                                   % report_url)
