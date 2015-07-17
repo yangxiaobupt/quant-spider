@@ -4,6 +4,7 @@
 import os
 import time
 import pymongo
+import hashlib
 from pybloom import BloomFilter
 
 from scrapy.conf import settings
@@ -17,7 +18,7 @@ from yang_spider.items import YangSpiderItem
 
 connection = pymongo.MongoClient("182.92.225.106", 9980)
 db = connection["pydata"]
-collection = db["tonghuashun_scrapy_crawlera1"]
+collection = db["tonghuashun_scrapy_docid"]
 
 crawled_urls = BloomFilter(capacity=1000 * 1000, error_rate=0.001)
 filename = './crawleditems/tonghuashun_crawled_urls.txt'
@@ -70,6 +71,9 @@ class TonghuashunSpider(scrapy.Spider):
 
         item['url'] = sel.response.url
         print item['url']
+
+        item['doc_id'] = hashlib.md5(sel.response.url).hexdigest()
+        print item['doc_id']
 
         title_xpath = '//div[@class="art_head"]/h1/text()'
         data = sel.xpath(title_xpath).extract()

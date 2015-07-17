@@ -27,8 +27,9 @@ class LocalFilePipeline(object):
                 raise DropItem("Missing {0}!".format(data))
         if valid:
             pub_datetime = item.get('pub_datetime')
-            if pub_datetime != None:
+            if pub_datetime is not None:
                 url = item.get('url')
+                doc_id = item.get('doc_id')
                 title = item.get('title')
                 pub_datetime = ''.join(pub_datetime.split(' ')[0].split('-'))
                 print pub_datetime
@@ -36,14 +37,11 @@ class LocalFilePipeline(object):
                 text = item.get('text', 'Text is Null!')
                 with open('./tonghuashun/%s' % pub_datetime, 'a') as fb:
                     fb.write(url + '\001')
-                    fb.write(
-                        title.encode('utf-8').replace('\001', '').replace('\n',
-                                                                          '') + '\001')
+                    fb.write(doc_id + '\001')
+                    fb.write(title.encode('utf-8').replace('\001', '').replace('\n', '') + '\001')
                     fb.write(pub_datetime.replace('\001', '') + '\001')
                     fb.write(crawl_datetime.replace('\001', '') + '\001')
-                    fb.write(
-                        text.encode('utf-8').replace('\001', '').replace('\n',
-                                                                         '') + '\n')
+                    fb.write(text.encode('utf-8').replace('\001', '').replace('\n', '') + '\n')
         return item
 
 class MongoDBPipeline(object):

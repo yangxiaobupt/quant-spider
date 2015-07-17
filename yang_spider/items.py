@@ -15,6 +15,7 @@ class YangSpiderItem(scrapy.Item):
     # name = scrapy.Field()
 
     url = Field()
+    doc_id = Field()
     title = Field()
     pub_datetime = Field()
     text = Field()
