@@ -36,9 +36,9 @@ class LocalFilePipeline(object):
                 print pub_datetime
                 crawl_datetime = item.get('crawl_datetime')
                 text = item.get('text', 'Text is Null!')
-                if not os.path.exists('./tonghuashun'):
-                    os.mkdir('./tonghuashun')
-                with open('./tonghuashun/%s' % pub_datetime, 'a') as fb:
+                if not os.path.exists('./%s' % spider.name):
+                    os.mkdir('./%s' % spider.name)
+                with open('./%s/%s' % (spider.name, pub_datetime), 'a') as fb:
                     fb.write(url + '\001')
                     fb.write(doc_id + '\001')
                     fb.write(title.replace('\001', '').replace('\n', '') + '\001')
