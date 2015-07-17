@@ -7,6 +7,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import pymongo
+import os
 
 from scrapy.conf import settings
 from scrapy.exceptions import DropItem
@@ -35,13 +36,15 @@ class LocalFilePipeline(object):
                 print pub_datetime
                 crawl_datetime = item.get('crawl_datetime')
                 text = item.get('text', 'Text is Null!')
+                if not os.path.exists('./tonghuashun'):
+                    os.mkdir('./tonghuashun')
                 with open('./tonghuashun/%s' % pub_datetime, 'a') as fb:
                     fb.write(url + '\001')
                     fb.write(doc_id + '\001')
-                    fb.write(title.encode('utf-8').replace('\001', '').replace('\n', '') + '\001')
+                    fb.write(title.replace('\001', '').replace('\n', '') + '\001')
                     fb.write(pub_datetime.replace('\001', '') + '\001')
                     fb.write(crawl_datetime.replace('\001', '') + '\001')
-                    fb.write(text.encode('utf-8').replace('\001', '').replace('\n', '') + '\n')
+                    fb.write(text.replace('\001', '').replace('\n', '') + '\n')
         return item
 
 class MongoDBPipeline(object):
