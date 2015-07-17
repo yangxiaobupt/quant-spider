@@ -18,6 +18,34 @@ class YangSpiderPipeline(object):
         return item
 
 
+class LocalFilePipeline(object):
+    def process_item(self, item, spider):
+        valid = True
+        for data in item:
+            if not data:
+                valid = False
+                raise DropItem("Missing {0}!".format(data))
+        if valid:
+            pub_datetime = item.get('pub_datetime')
+            if pub_datetime != None:
+                url = item.get('url')
+                title = item.get('title')
+                pub_datetime = ''.join(pub_datetime.split(' ')[0].split('-'))
+                print pub_datetime
+                crawl_datetime = item.get('crawl_datetime')
+                text = item.get('text', 'Text is Null!')
+                with open('./tonghuashun/%s' % pub_datetime, 'a') as fb:
+                    fb.write(url + '\001')
+                    fb.write(
+                        title.encode('utf-8').replace('\001', '').replace('\n',
+                                                                          '') + '\001')
+                    fb.write(pub_datetime.replace('\001', '') + '\001')
+                    fb.write(crawl_datetime.replace('\001', '') + '\001')
+                    fb.write(
+                        text.encode('utf-8').replace('\001', '').replace('\n',
+                                                                         '') + '\n')
+        return item
+
 class MongoDBPipeline(object):
     def __init__(self):
         connection = pymongo.MongoClient(

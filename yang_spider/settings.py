@@ -109,10 +109,11 @@ DOWNLOADER_MIDDLEWARES = {
     # 'yang_spider.middlewares.ProxyMiddleware': 100,
 }
 
-ITEM_PIPELINES = {
-    'yang_spider.pipelines.HDFSPipeline': 200, }
+# ITEM_PIPELINES = {
+# 'yang_spider.pipelines.LocalFilePipeline': 200, }
 
 ITEM_PIPELINES = {
+    'yang_spider.pipelines.LocalFilePipeline': 200,
     'yang_spider.pipelines.MongoDBPipeline': 300, }
 
 MONGODB_SERVER = "182.92.225.106"

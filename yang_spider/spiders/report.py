@@ -20,6 +20,7 @@ connection = pymongo.MongoClient(settings['MONGODB_SERVER'],
 db = connection[settings['MONGODB_DB']]
 collection = db[settings['MONGODB_COLLECTION']]
 
+
 crawled_urls = BloomFilter(capacity=1000*1000, error_rate=0.001)
 filename = './crawleditems/report_crawled_urls.txt'
 if not os.path.exists(filename):
@@ -48,7 +49,7 @@ class ReportSpider(scrapy.Spider):
     start_urls = [
         # "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=2200",
         # "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=3200",
-        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=9500"
+        "http://www.hibor.com.cn/result.asp?lm=0&area=DocTitle&timess=24&key=&dtype=&page=1"
     ]
 
     def parse(self, response):
